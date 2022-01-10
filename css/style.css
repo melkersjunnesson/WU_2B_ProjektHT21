@@ -4,6 +4,733 @@
     padding: 0;
 }
 
+<<<<<<< HEAD
+/* _________________________________________________________________________________ */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+}
+
+h1:not(#allmant *, #meny *, #boka *) {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+}
+
+/* _________________________________________________________________________________ */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 50px 100px 0px 100px; 
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+header > section {
+    display: flex;   
+}
+
+header > section > img {
+    width: 27px;
+    height: 27px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 20px;    
+}
+
+#selected_allmant {
+    background-image: url(../img/bakgrund2.png);    
+    color: black;
+}
+
+#selected_meny {
+    background-image: url(../img/bakgrund1.png);    
+    color: black;
+}
+
+#selected_bokning {
+    background-image: url(../img/bakgrund3.png);   
+    color: black;
+}
+
+/* _________________________________________________________________________________ */
+
+#allmant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-image: url(../img/vinterlandskap4.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: 100vh;
+}
+
+#allmant > section {
+    margin-bottom: 20vh;
+}
+
+#allmant > section > #text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-image: url(../img/paint.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding: 2rem 2.5rem 2rem 2.5rem;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo > img {
+    height: 60px;
+    width: 60px;
+}
+
+/* _________________________________________________________________________________ */
+
+#reviews {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(../img/plank6.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 6rem 0 8rem 0;
+}
+
+#reviews > section {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    height: 800px;
+    width: 750px;
+}
+
+#reviews > section > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 375px;
+    width: 350px;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    padding: 0 3.5rem 0 3.5rem;
+}
+
+#reviews > section > section > div {
+    display: flex;
+}
+
+#reviews > section > section > div > div {
+    width: 12px;
+    height: 12px;
+
+    margin: 15px 2px 15px 2px;
+    border: 1.5px solid;
+    border-radius: 6px;
+}
+
+#review_1 {
+    background-image: url(../img/bakgrund4.png);
+}
+
+#review_2 {
+    background-image: url(../img/bakgrund5.png);
+}
+
+#review_3 {
+    background-image: url(../img/bakgrund7.png);
+}
+
+#review_4 {
+    background-image: url(../img/bakgrund6.png);
+}
+
+/* _________________________________________________________________________________ */
+
+#lokaler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(../img/barr2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 6rem 0 8rem 0;
+}
+
+#lokaler > section {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    height: 550px;
+    width: 750px;
+}
+
+#lokaler > section > img {
+    width: 300px;
+    height: auto;
+}
+
+#lokaler > section > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 250px;
+    width: 400px;
+
+    background-image: url(../img/bakgrund14.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding: 0 3.5rem 0 3.5rem;
+}
+
+#lokaler > section > section > h2 {
+    padding-bottom: 0.5rem;
+}
+
+/* _________________________________________________________________________________ */
+
+#hittahit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(../img/sno1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 6rem 0 8rem 0;
+}
+
+#hittahit > section {
+    display: flex;
+    justify-content: space-between;
+     
+    width: 750px;
+}
+
+#hittahit > section > img {
+    width: 300px;
+    height: 200px;
+}
+
+#hittahit > section > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 200px;
+    width: 400px;
+
+    background-image: url(../img/bakgrund14.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding: 0 3.5rem 0 3.5rem;
+}
+
+#hittahit > section > section > h2 {
+    padding-bottom: 0.5rem;
+}
+
+iframe {
+    width: 750px;
+    height: 480px;
+
+    -webkit-mask-image: url(../img/mask2.png);
+    mask-image: url(../img/mask2.png);
+}
+
+/* _________________________________________________________________________________ */
+
+#meny {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    background-image: url(../img/stuga2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: 100vh; 
+}
+
+#meny > section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-bottom: 20vh;
+}
+
+#meny > section > #text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-image: url(../img/paint.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding: 2rem 2.5rem 2rem 2.5rem;
+}
+
+/* _________________________________________________________________________________ */
+
+#ratter > section {
+    display: flex;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 5rem 0 5rem 0;
+}
+
+#ratter > section > section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 800px;
+}
+
+#ratter > section > section > section {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: min-content;
+    width: 450px;
+
+    padding: 3rem 3.5rem 3rem 3.5rem;
+}
+
+#ratter > section > section > section > h2 {
+    padding-bottom: 0.5rem;
+}
+
+/* _________________________ */
+
+#sushi {
+    background-image: url(../img/sno1.png);
+}
+
+#sushi > section > section {
+    background-image: url(../img/bakgrund9.png);
+}
+
+#sushi > section > img {
+    height: 165px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#hamburgare {
+    background-image: url(../img/barr2.png);
+}
+
+#hamburgare > section > section {
+    background-image: url(../img/bakgrund8.png);
+}
+
+#hamburgare > section > img {
+    height: 210px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#fishnchips {
+    background-image: url(../img/tra1.png);
+}
+
+#fishnchips > section > section {
+    background-image: url(../img/bakgrund10.png);
+}
+
+#fishnchips > section > img {
+    height: 180px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#fajita {
+    background-image: url(../img/kotte2.png);
+}
+
+#fajita > section > section {
+    background-image: url(../img/bakgrund8.png);
+}
+
+#fajita > section > img {
+    height: 229px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#anka {
+    background-image: url(../img/barr2.png);
+}
+
+#anka > section > section {
+    background-image: url(../img/bakgrund9.png);
+}
+
+#anka > section > img {
+    height: 200px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#tikkamasala {
+    background-image: url(../img/tra1.png);
+}
+
+#tikkamasala > section > section {
+    background-image: url(../img/bakgrund10.png);
+}
+
+#tikkamasala > section > img {
+    height: 350px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#kottbullar {
+    background-image: url(../img/frost1.png);
+}
+
+#kottbullar > section > section {
+    background-image: url(../img/bakgrund8.png);
+}
+
+#kottbullar > section > img {
+    height: 200px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#pizza {
+    background-image: url(../img/kotte2.png);
+}
+
+#pizza > section > section {
+    background-image: url(../img/bakgrund9.png);
+}
+
+#pizza > section > img {
+    height: 375px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#chimichurri {
+    background-image: url(../img/sno1.png);
+}
+
+#chimichurri > section > section {
+    background-image: url(../img/bakgrund10.png);
+}
+
+#chimichurri > section > img {
+    height: 200px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#potijekos {
+    background-image: url(../img/barr2.png);
+}
+
+#potijekos > section > section {
+    background-image: url(../img/bakgrund8.png);
+}
+
+#potijekos > section > img {
+    height: 212px;
+    width: 300px;
+}
+
+/* _________________________ */
+
+#yassa {
+    background-image: url(../img/tra1.png);
+}
+
+#yassa > section > section {
+    background-image: url(../img/bakgrund9.png);
+}
+
+#yassa > section > img {
+    height: 245px;
+    width: 300px;
+}
+
+/* _________________________________________________________________________________ */
+
+#boka {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    background-image: url(../img/vinter.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: 100vh; 
+}
+
+
+#boka > section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-bottom: 20vh;
+}
+
+#boka > section > #text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-image: url(../img/paint.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding: 2rem 2.5rem 2rem 2.5rem;
+}
+
+
+
+/* _________________________________________________________________________________ */
+
+
+
+#booking {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(../img/barr2.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+
+    
+}
+
+#booking > section {    
+    display: grid;
+    grid-template-columns: 2.1fr 2.9fr 2.1fr 2.9fr;
+    
+    grid-template-areas: 
+        "nam nam tel tel"
+        "bor dat dat tid";
+    grid-gap: 1.5rem;
+    
+    width: 750px;
+}
+
+#booking > section > section > h2 {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0 0 1rem 0;
+    width: min-content;
+}
+
+#booking > section > section > *:not(h2) {
+    padding: 1rem 2rem 1rem 2rem;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+}
+
+#booking > section > section > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+#booking > section > section > div > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#booking > section > section > div > p {
+    height: 3rem;
+}
+
+/* _________________________ */
+
+#namn {
+    grid-area: nam;
+}
+
+#namn > h2 {
+    background-image: url(../img/bakgrund4.png);
+}
+
+/* _________________________ */
+
+#telefon {
+    grid-area: tel;
+}
+
+#telefon > h2 {
+    background-image: url(../img/bakgrund4.png);
+}
+
+/* _________________________ */
+
+
+#bord {
+    grid-area: bor;
+}
+
+#bord > h2 {
+    background-image: url(../img/bakgrund4.png);
+}
+
+#bord > div > h3 {
+    width: 100%;
+}
+
+#bord > div > p {
+    width: 50%;
+}
+
+/* _________________________ */
+
+
+#datum {
+    grid-area: dat;
+}
+
+#datum > h2 {
+    background-image: url(../img/bakgrund4.png);
+}
+
+#datum > div > * {
+    width: 14.28%;
+}
+
+/* _________________________ */
+
+
+#tid {
+    grid-area: tid;
+}
+
+#tid > h2 {
+    background-image: url(../img/bakgrund4.png);
+}
+
+#tid > div > h3 {
+    width: 100%;
+}
+
+#tid > div > p {
+    width: 50%;
+}
+
+/* _________________________________________________________________________________ */ 
+
+#unavailable {
+    color: darkgray;
+}
+
+#selected {
+    color: black;
+    background: rgb(210, 210, 210);
+    font-weight: bold;
+}
+
+/* _________________________________________________________________________________ */
+=======
 #wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -26,3 +753,4 @@
     width: 25%;
     height: auto;
 }
+>>>>>>> parent of 00835ee (Slutgiltig version)
