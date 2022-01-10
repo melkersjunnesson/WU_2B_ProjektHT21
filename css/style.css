@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Kanit:wght@600&family=Montserrat:wght@100;900&display=swap');
+
 * {
     box-sizing: border-box;
-    margin: 0;
+    text-decoration: none;
     padding: 0;
+    margin: 0;
 }
 
-<<<<<<< HEAD
-/* _________________________________________________________________________________ */
+/* ____________________ TEXTTAGGAR ____________________ */
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -14,7 +16,7 @@ h1 {
     color: white;
 }
 
-h1:not(#allmant *, #meny *, #boka *) {
+h1:not(.introduktion *) {
     margin-bottom: 3rem;
 }
 
@@ -22,6 +24,10 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.3rem;
+}
+
+h2:not(header > * *, footer > * *) {
+    padding-bottom: 0.5rem;
 }
 
 h3 {
@@ -32,7 +38,6 @@ h3 {
     height: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 p {
@@ -40,7 +45,7 @@ p {
     font-size: 1.3rem;
 }
 
-/* _________________________________________________________________________________ */
+/* ____________________ HEADER ____________________ */
 
 header {
     display: flex;
@@ -52,280 +57,57 @@ header {
     width: 100%;
 }
 
-header > section {
-    display: flex;   
+header > * {
+    display: flex; 
 }
 
-header > section > img {
-    width: 27px;
-    height: 27px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav > a {
+header > * > a {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-size: 100% 100%;
+    padding: 10px 20px 10px 20px;
+    color: rgb(255, 255, 255);    
+}
+
+header > * > a > img {
+    height: 27px;
+    width: auto;
+}
+
+.vald {
     background-repeat: no-repeat;
-
-    color: rgb(255, 255, 255);
-    padding: 10px 20px 10px 20px;    
+    background-size: 100% 100%;
+    color: rgb(0, 0, 0);
 }
 
-#selected_allmant {
-    background-image: url(../img/bakgrund2.png);    
-    color: black;
+.vald#allmant {
+    background-image: url(../img/penseldrag1.png);    
 }
 
-#selected_meny {
-    background-image: url(../img/bakgrund1.png);    
-    color: black;
+.vald#meny {
+    background-image: url(../img/penseldrag2.png);    
 }
 
-#selected_bokning {
-    background-image: url(../img/bakgrund3.png);   
-    color: black;
+.vald#boka {
+    background-image: url(../img/penseldrag3.png);   
 }
 
-/* _________________________________________________________________________________ */
+/* ____________________ ARTIKLAR MED KLASSEN 'INTRODUKTION' ____________________ */
 
-#allmant {
+.introduktion {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 
-    background-image: url(../img/vinterlandskap4.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     height: 100vh;
 }
 
-#allmant > section {
-    margin-bottom: 20vh;
-}
-
-#allmant > section > #text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    
-    background-image: url(../img/paint.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    padding: 2rem 2.5rem 2rem 2.5rem;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#logo > img {
-    height: 60px;
-    width: 60px;
-}
-
-/* _________________________________________________________________________________ */
-
-#reviews {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    background-image: url(../img/plank6.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    padding: 6rem 0 8rem 0;
-}
-
-#reviews > section {
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-    height: 800px;
-    width: 750px;
-}
-
-#reviews > section > section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    height: 375px;
-    width: 350px;
-
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    padding: 0 3.5rem 0 3.5rem;
-}
-
-#reviews > section > section > div {
-    display: flex;
-}
-
-#reviews > section > section > div > div {
-    width: 12px;
-    height: 12px;
-
-    margin: 15px 2px 15px 2px;
-    border: 1.5px solid;
-    border-radius: 6px;
-}
-
-#review_1 {
-    background-image: url(../img/bakgrund4.png);
-}
-
-#review_2 {
-    background-image: url(../img/bakgrund5.png);
-}
-
-#review_3 {
-    background-image: url(../img/bakgrund7.png);
-}
-
-#review_4 {
-    background-image: url(../img/bakgrund6.png);
-}
-
-/* _________________________________________________________________________________ */
-
-#lokaler {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    background-image: url(../img/barr2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    padding: 6rem 0 8rem 0;
-}
-
-#lokaler > section {
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-    height: 550px;
-    width: 750px;
-}
-
-#lokaler > section > img {
-    width: 300px;
-    height: auto;
-}
-
-#lokaler > section > section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    height: 250px;
-    width: 400px;
-
-    background-image: url(../img/bakgrund14.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    padding: 0 3.5rem 0 3.5rem;
-}
-
-#lokaler > section > section > h2 {
-    padding-bottom: 0.5rem;
-}
-
-/* _________________________________________________________________________________ */
-
-#hittahit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    background-image: url(../img/sno1.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    padding: 6rem 0 8rem 0;
-}
-
-#hittahit > section {
-    display: flex;
-    justify-content: space-between;
-     
-    width: 750px;
-}
-
-#hittahit > section > img {
-    width: 300px;
-    height: 200px;
-}
-
-#hittahit > section > section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    height: 200px;
-    width: 400px;
-
-    background-image: url(../img/bakgrund14.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    padding: 0 3.5rem 0 3.5rem;
-}
-
-#hittahit > section > section > h2 {
-    padding-bottom: 0.5rem;
-}
-
-iframe {
-    width: 750px;
-    height: 480px;
-
-    -webkit-mask-image: url(../img/mask2.png);
-    mask-image: url(../img/mask2.png);
-}
-
-/* _________________________________________________________________________________ */
-
-#meny {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    
-    background-image: url(../img/stuga2.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    height: 100vh; 
-}
-
-#meny > section {
+.introduktion > section {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -333,277 +115,221 @@ iframe {
     margin-bottom: 20vh;
 }
 
-#meny > section > #text {
+.introduktion > section > #text {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     
-    background-image: url(../img/paint.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     padding: 2rem 2.5rem 2rem 2.5rem;
 }
 
-/* _________________________________________________________________________________ */
+.introduktion > section > #logotyp {
+    display: flex;   
+    align-items: center;
+}
 
-#ratter > section {
+.introduktion > section > #logotyp > img {
+    height: 50px;
+    width: auto;
+}
+
+.introduktion#allmant {
+    background-image: url(../img/vinter.png);
+}
+
+.introduktion#meny {
+    background-image: url(../img/stuga.png);
+}
+
+.introduktion#boka {
+    background-image: url(../img/landskap.png);
+}
+
+.introduktion#allmant > section > #text {
+    background-image: url(../img/penseldrag4.png);
+}
+
+.introduktion#meny > section > #text {
+    background-image: url(../img/penseldrag5.png);
+}
+
+.introduktion#boka > section > #text {
+    background-image: url(../img/penseldrag6.png);
+}
+
+/* ____________________ ARTIKLAR MED KLASSEN 'HUVUDDEL' ____________________ */
+
+.huvuddel {
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat: repeat-y;
+    background-size: 100%; 
 
     padding: 5rem 0 5rem 0;
 }
 
-#ratter > section > section {
+.huvuddel:not(#boka) > section {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
-    width: 800px;
+
+    width: 750px;
 }
 
-#ratter > section > section > section {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.huvuddel:not(#boka) > section > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-    height: min-content;
-    width: 450px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
     padding: 3rem 3.5rem 3rem 3.5rem;
 }
 
-#ratter > section > section > section > h2 {
-    padding-bottom: 0.5rem;
+.huvuddel:not(#sushi, #hamburgare, #fishnchips, #fajita, #kottbullar, #tikkamasala, #anka, #chimichurri, #pizza, #yassa, #potijekos, #boka) > section > * {
+    margin-bottom: 3rem;
 }
 
-/* _________________________ */
+/* ____________________ ARKIELN MED ID:T 'RECENSIONER' ____________________ */
 
-#sushi {
-    background-image: url(../img/sno1.png);
+#recensioner {
+    background-image: url(../img/plank.png);
 }
 
-#sushi > section > section {
-    background-image: url(../img/bakgrund9.png);
+#recensioner > section > section {
+    width: 350px;
 }
 
-#sushi > section > img {
-    height: 165px;
+#recensioner > section > section > div {
+    display: flex;
+}
+
+#recensioner > section > section > div > div {
+    width: 0.75rem;
+    height: 0.75rem;
+
+    margin: 7px 2px 15px 2px;
+    border-radius: 0.375rem;
+    border: 1.5px solid;
+}
+
+#recension_1 {
+    background-image: url(../img/penseldrag7.png);
+}
+
+#recension_2 {
+    background-image: url(../img/penseldrag8.png);
+}
+
+#recension_3 {
+    background-image: url(../img/penseldrag9.png);
+}
+
+#recension_4 {
+    background-image: url(../img/penseldrag10.png);
+}
+
+/* ____________________ ARTIKELARNA MED ID:T 'LOKALER' OCH 'HITTA HIT' ____________________ */
+
+#lokaler {
+    background-image: url(../img/mark.png);
+}
+
+#hittahit {
+    background-image: url(../img/barr.png);
+}
+
+#lokaler > section > section, #hittahit > section > section {
+    width: 400px;
+}
+
+#lokaler > section > img, #hittahit > section > img {
     width: 300px;
+    height: auto;
 }
 
-/* _________________________ */
-
-#hamburgare {
-    background-image: url(../img/barr2.png);
+#lokaler > section > #lokaler_1 {
+    background-image: url(../img/penseldrag11.png);
 }
 
-#hamburgare > section > section {
-    background-image: url(../img/bakgrund8.png);
+#lokaler > section > #lokaler_2 {
+    background-image: url(../img/penseldrag12.png);
 }
 
-#hamburgare > section > img {
-    height: 210px;
-    width: 300px;
+#hittahit > section > section {
+    background-image: url(../img/penseldrag13.png);
 }
 
-/* _________________________ */
-
-#fishnchips {
-    background-image: url(../img/tra1.png);
+iframe {
+    -webkit-mask-box-image: url(../img/mask.png);
+    margin: -3rem 0 3rem 0;
+    height: 480px;
+    width: 750px;
 }
 
-#fishnchips > section > section {
-    background-image: url(../img/bakgrund10.png);
+/* ____________________ ARTIKLARNA SOM UTGÖR MENYN ____________________ */
+
+
+#sushi, #chimichurri  {
+    background-image: url(../img/sno.png);
 }
 
-#fishnchips > section > img {
-    height: 180px;
-    width: 300px;
+#hamburgare, #anka, #potijekos {
+    background-image: url(../img/barr.png);    
 }
 
-/* _________________________ */
-
-#fajita {
-    background-image: url(../img/kotte2.png);
+#fishnchips, #tikkamasala, #yassa {
+    background-image: url(../img/tra.png);
 }
 
-#fajita > section > section {
-    background-image: url(../img/bakgrund8.png);
+#fajita, #pizza {
+    background-image: url(../img/kotte.png);
 }
-
-#fajita > section > img {
-    height: 229px;
-    width: 300px;
-}
-
-/* _________________________ */
-
-#anka {
-    background-image: url(../img/barr2.png);
-}
-
-#anka > section > section {
-    background-image: url(../img/bakgrund9.png);
-}
-
-#anka > section > img {
-    height: 200px;
-    width: 300px;
-}
-
-/* _________________________ */
-
-#tikkamasala {
-    background-image: url(../img/tra1.png);
-}
-
-#tikkamasala > section > section {
-    background-image: url(../img/bakgrund10.png);
-}
-
-#tikkamasala > section > img {
-    height: 350px;
-    width: 300px;
-}
-
-/* _________________________ */
 
 #kottbullar {
-    background-image: url(../img/frost1.png);
+    background-image: url(../img/frost.png);
 }
 
-#kottbullar > section > section {
-    background-image: url(../img/bakgrund8.png);
+#sushi > section > section, #fajita > section > section, #anka > section > section, #yassa > section > section {
+    background-image: url(../img/penseldrag14.png);
+} 
+
+#hamburgare > section > section, #kottbullar > section > section, #chimichurri > section > section, #potijekos > section > section {
+    background-image: url(../img/penseldrag13.png);    
 }
 
-#kottbullar > section > img {
-    height: 200px;
+#fishnchips > section > section, #tikkamasala > section > section, #pizza > section > section {
+    background-image: url(../img/penseldrag12.png);
+}
+
+.huvuddel:not(#recensioner, #lokaler, #hittahit, #boka) > section > section {
+    width: 400px;
+}
+
+.huvuddel:not(#recensioner, #lokaler, #hittahit, #boka) > section > img {
     width: 300px;
+    height: auto;
 }
 
-/* _________________________ */
+/* ____________________ ARTIKELN MED KLASSEN 'HUVUDDEL' OCH ID:T 'BOKA' ____________________ */
 
-#pizza {
-    background-image: url(../img/kotte2.png);
+.huvuddel#boka {
+    background-image: url(../img/barr.png);
 }
 
-#pizza > section > section {
-    background-image: url(../img/bakgrund9.png);
-}
-
-#pizza > section > img {
-    height: 375px;
-    width: 300px;
-}
-
-/* _________________________ */
-
-#chimichurri {
-    background-image: url(../img/sno1.png);
-}
-
-#chimichurri > section > section {
-    background-image: url(../img/bakgrund10.png);
-}
-
-#chimichurri > section > img {
-    height: 200px;
-    width: 300px;
-}
-
-/* _________________________ */
-
-#potijekos {
-    background-image: url(../img/barr2.png);
-}
-
-#potijekos > section > section {
-    background-image: url(../img/bakgrund8.png);
-}
-
-#potijekos > section > img {
-    height: 212px;
-    width: 300px;
-}
-
-/* _________________________ */
-
-#yassa {
-    background-image: url(../img/tra1.png);
-}
-
-#yassa > section > section {
-    background-image: url(../img/bakgrund9.png);
-}
-
-#yassa > section > img {
-    height: 245px;
-    width: 300px;
-}
-
-/* _________________________________________________________________________________ */
-
-#boka {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    
-    background-image: url(../img/vinter.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    height: 100vh; 
-}
-
-
-#boka > section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    margin-bottom: 20vh;
-}
-
-#boka > section > #text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    
-    background-image: url(../img/paint.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    padding: 2rem 2.5rem 2rem 2.5rem;
-}
-
-
-
-/* _________________________________________________________________________________ */
-
-
-
-#booking {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    background-image: url(../img/barr2.png);
-    background-repeat: repeat-y;
-    background-size: 100%;
-
-    
-}
-
-#booking > section {    
+.huvuddel#boka > section {    
     display: grid;
-    grid-template-columns: 2.1fr 2.9fr 2.1fr 2.9fr;
-    
+    grid-template-columns: 2.1fr 2.9fr 2.1fr 2.9fr;    
     grid-template-areas: 
         "nam nam tel tel"
         "bor dat dat tid";
@@ -612,145 +338,127 @@ iframe {
     width: 750px;
 }
 
-#booking > section > section > h2 {
+.huvuddel#boka > section > section > h2 {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     padding: 1rem 2rem 1rem 2rem;
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
     width: min-content;
 }
 
-#booking > section > section > *:not(h2) {
-    padding: 1rem 2rem 1rem 2rem;
-    border: 2px solid white;
+.huvuddel#boka > section > section > *:not(h2) {
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 3px;
-    color: white;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem 1rem 2rem;
 }
 
-#booking > section > section > div {
+.huvuddel#boka > section > section > section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;    
 }
 
-#booking > section > section > div > * {
+.huvuddel#boka > section > section > section > * {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#booking > section > section > div > p {
+.huvuddel#boka > section > section > section > p {
     height: 3rem;
 }
 
-/* _________________________ */
+/* ____________________ GRID-WRAPPERNS SEKTIONER ____________________ */
 
 #namn {
     grid-area: nam;
 }
 
-#namn > h2 {
-    background-image: url(../img/bakgrund4.png);
-}
-
-/* _________________________ */
-
 #telefon {
     grid-area: tel;
 }
-
-#telefon > h2 {
-    background-image: url(../img/bakgrund4.png);
-}
-
-/* _________________________ */
-
 
 #bord {
     grid-area: bor;
 }
 
-#bord > h2 {
-    background-image: url(../img/bakgrund4.png);
-}
-
-#bord > div > h3 {
-    width: 100%;
-}
-
-#bord > div > p {
-    width: 50%;
-}
-
-/* _________________________ */
-
-
 #datum {
     grid-area: dat;
 }
-
-#datum > h2 {
-    background-image: url(../img/bakgrund4.png);
-}
-
-#datum > div > * {
-    width: 14.28%;
-}
-
-/* _________________________ */
-
 
 #tid {
     grid-area: tid;
 }
 
-#tid > h2 {
-    background-image: url(../img/bakgrund4.png);
+#namn > h2 {
+    background-image: url(../img/penseldrag15.png);
 }
 
-#tid > div > h3 {
+#telefon > h2 {
+    background-image: url(../img/penseldrag16.png);
+}
+
+#bord > h2 {
+    background-image: url(../img/penseldrag17.png);
+}
+
+#datum > h2 {
+    background-image: url(../img/penseldrag18.png);
+}
+
+#tid > h2 {
+    background-image: url(../img/penseldrag19.png);
+}
+
+#bord > section > h3, #tid > section > h3 {
     width: 100%;
 }
 
-#tid > div > p {
+#bord > section > p, #tid > section > p {
     width: 50%;
 }
 
-/* _________________________________________________________________________________ */ 
-
-#unavailable {
-    color: darkgray;
+#datum > section > * {
+    width: 14.28%;
 }
 
-#selected {
-    color: black;
+#otillganglig {
+    color: rgb(170, 170, 170);
+}
+
+#vald {
     background: rgb(210, 210, 210);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
-/* _________________________________________________________________________________ */
-=======
-#wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "img";
-}
+/* ____________________ FOOTER ____________________ */
 
-#wrapper > div {
-    grid-area: img;
-}
-
-#map {
-    width: 100%;
-    border: 1px solid black;
+footer {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(../img/natt.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding: 4rem 0 6rem 0;
 }
 
-#map > img {
-    width: 25%;
-    height: auto;
+footer > section {
+    display: flex;
+    justify-content: space-between;
+
+    width: 700px;
 }
->>>>>>> parent of 00835ee (Slutgiltig version)
+
+footer section > h3 {
+    color: rgb(255, 255, 255);
+}
+
+footer section > p {
+    color: rgb(190, 190, 190);
+}
