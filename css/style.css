@@ -26,7 +26,7 @@ h2 {
     font-size: 1.3rem;
 }
 
-h2:not(header > * *, footer > * *) {
+h2:not(.introduktion *) {
     padding-bottom: 0.5rem;
 }
 
@@ -52,7 +52,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: 50px 100px 0px 100px; 
+    padding: 3rem 4rem 0 4rem; 
     color: rgb(255, 255, 255);
     width: 100%;
 }
@@ -66,7 +66,7 @@ header > * > a {
     align-items: center;
     justify-content: center;
 
-    padding: 10px 20px 10px 20px;
+    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
     color: rgb(255, 255, 255);    
 }
 
@@ -75,21 +75,21 @@ header > * > a > img {
     width: auto;
 }
 
-.vald {
+#vald {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: rgb(0, 0, 0);
 }
 
-.vald#allmant {
+#vald.allmant {
     background-image: url(../img/penseldrag1.png);    
 }
 
-.vald#meny {
+#vald.meny {
     background-image: url(../img/penseldrag2.png);    
 }
 
-.vald#boka {
+#vald.boka {
     background-image: url(../img/penseldrag3.png);   
 }
 
@@ -218,7 +218,7 @@ header > * > a > img {
     width: 0.75rem;
     height: 0.75rem;
 
-    margin: 7px 2px 15px 2px;
+    margin: 0.455rem 0.125rem 0.935rem 0.125rem;
     border-radius: 0.375rem;
     border: 1.5px solid;
 }
@@ -424,11 +424,11 @@ iframe {
     width: 14.28%;
 }
 
-#otillganglig {
+.otillganglig {
     color: rgb(170, 170, 170);
 }
 
-#vald {
+.vald {
     background: rgb(210, 210, 210);
     color: rgb(0, 0, 0);
     font-weight: bold;
